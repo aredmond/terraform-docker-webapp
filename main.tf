@@ -103,7 +103,7 @@ module "fargate" {
   task_container_assign_public_ip = true
 
   task_container_environment = {
-    ADMIN_TOKEN = "SmithShuffleShameThusDecalFootsie"
+    ADMIN_TOKEN = var.admin_token
   }
 
   target_groups = [
